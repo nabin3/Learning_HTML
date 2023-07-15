@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="auther" content="Nabin Chandra Maiti">
+        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <title>my first webpage</title>
+    </head>
+
+    <body>
+        <h1>My Goal for this Year</h1>
+        <nav>   <!-- this is called nav tag, it's responsible for creating navigation menu-->
+            <ul>
+                <li>
+                    <a href="#html">learning html</a>
+                </li>  <!-- here on <a> tag we use internal reference,by which we can link different section of same web page-->
+                <li>
+                    <a href="#vacation">vacation plan</a>
+                </li>
+            </ul>
+        </nav>
+        <hr> <!-- hr is for horizontal straight line-->
+        <section id="html">
+            <h2>I am ready to learn HTML</h2>
+            <p>This is my first webpage</p>
+
+            <h3>Here is my daily shedule</h3>
+            <p>Let me tell you how...</p>
+            <ol>    <!-- ol is for oredered list and li is for list, try to see in webpage list does not create amount of space like paragraph element does, with other element-->
+                <li> ..I learn more about Webdev.</li>
+                <li> ..I plan out my schedule.</li>
+                <li> ..I use resources from <abbr title="Mozzila Developer Network"><a href="https://developer.mozilla.org/">MDN</a>.</abbr> </li> <!-- <a> is anchor tag, used for linking another webpage, here we use absolute reference because the page we want to link situated on different webserver-->
+            </ol>
+        </section>
+        <hr>
+
+        <!-- block level element are those elements which always create a new line if used, where inline element don't create a new line <pr> is an example of block level element, where <em> is an inline element(by the way <em> is for emphasizing texts inside a paragraph), inline element does not create an extra space, breake line-->
+        <section id="vacation">
+            <h2>I am also Planning a Vacation</h2>
+            <p>I've been working hard and really need a gateway</p>
+            <p>I live in <abbr title="Kensas">KS</abbr>, So I want to visit a beach</p>
+
+            <h3>Place I would like to visit</h3>
+            <ul>    <!-- ul is for unordered list -->
+                <li><p>I heard good things about Caribbean</p></li>
+                <li><p>I've heard good things about going here:</p>
+                    <address>   <!-- <address> element is for writting address-->
+                        Kolkata,West Bengal,India
+                        <br>Jagannath Tample,Puri,Odisha,India
+                        <br>Kerala,India
+                    </address>
+                </li>
+            </ul>
+
+            <h3>Place I want to avoid</h3>
+            <dl> <!-- dl is for description list-->
+                <dt>North Pole</dt> <!-- dt is for description term -->
+                <dd>I heared this is <strong>cold</strong>!</dd> <!-- dd is for description details -->
+                <dt>South Pole</dt>
+                <dd>This is also <strong>cold</strong></dd>
+                <dt>Mountain Tops</dt>
+                <dd>These are also <strong>cold</strong></dd>
+            </dl>
+        </section>
+        
+        <hr>
+
+        <!-- more html entities-->
+        &lt;&lt;&lt;&copy;<a href="about.html">Nabin Chandra Maiti</a>&gt;&gt;&gt; <!-- &lt is for less than, &copy is for copyright symbol and &gt is for greater than symbol, and here in anchor tag we used relative reference as about.html webpage on same server as index.html -->
+        <p><a href="#">Back to Top</a></p>  <!-- here I use "#" in internal reference to take us to the top of the webpage -->
+    </body>
+
+</html>
